@@ -441,27 +441,30 @@
   .stats-grid span { font-size: 0.82rem; color: var(--ink-soft); }
 
   /* ---------- STORY / TIMELINE ---------- */
-  .timeline { display: flex; flex-direction: column; gap: 0; margin-top: 12px; }
+  .timeline { display: flex; flex-direction: column; gap: 0; margin-top: 12px; max-width: 880px; }
   .tl-item {
     display: grid;
-    grid-template-columns: 130px 24px 1fr;
-    gap: 20px;
-    padding: 26px 0;
+    grid-template-columns: 96px 24px minmax(0, 1fr);
+    gap: 32px;
+    padding: 38px 0;
   }
-  html[dir="rtl"] .tl-item { grid-template-columns: 1fr 24px 130px; }
   .tl-item + .tl-item { border-top: 1px solid var(--hairline); }
   .tl-year {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--terracotta-deep);
     padding-top: 2px;
   }
   html[dir="rtl"] .tl-year { font-family: 'Work Sans', system-ui, sans-serif; text-align: right; }
   .tl-dot-col { display: flex; justify-content: center; position: relative; }
   .tl-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--terracotta); margin-top: 6px; box-shadow: 0 0 0 5px color-mix(in srgb, var(--terracotta) 16%, transparent); }
-  .tl-body h3 { font-size: 1.12rem; margin-bottom: 8px; font-family: 'Work Sans', system-ui, sans-serif; font-weight: 700; }
-  .tl-body p { margin: 0; color: var(--ink-soft); font-size: 0.96rem; line-height: 1.65; max-width: 58ch; }
+  .tl-body h3 { font-size: 1.28rem; margin-bottom: 12px; font-family: 'Work Sans', system-ui, sans-serif; font-weight: 700; }
+  .tl-body p { margin: 0; color: var(--ink-soft); font-size: 1.04rem; line-height: 1.75; max-width: 640px; }
+  @media (max-width: 640px) {
+    .tl-item { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
+    .tl-dot-col { display: none; }
+  }
   .tl-tag {
     display: inline-block;
     font-size: 0.7rem;
@@ -717,7 +720,7 @@
         <span class="kicker" data-i18n-ar>كيف بدأت</span>
         <h2>
           <span data-i18n-en>From a classroom to<br>the <em>highway.</em></span>
-          <span data-i18n-ar>من قاعة الدراسة إلى<br><em>الطريق السريع.</em></span>
+          <span data-i18n-ar>من الاكاديمية الى<br><em>الطرق السريعة.</em></span>
         </h2>
       </div>
       <div class="timeline">
@@ -739,7 +742,7 @@
           <div class="tl-dot-col"><div class="tl-dot"></div></div>
           <div class="tl-body">
             <span class="tl-tag" data-i18n-en>Redesigned by L² Studio</span>
-            <span class="tl-tag" data-i18n-ar>أعاد تصميمه استوديو إل سكوير</span>
+            <span class="tl-tag" data-i18n-ar>أعاد تصميمه استوديو لام تربيع</span>
             <h3><span data-i18n-en>Rebuilt, end to end</span><span data-i18n-ar>إعادة بناء كاملة</span></h3>
             <p>
               <span data-i18n-en>Terhal was rebuilt from the ground up: a real route engine that follows actual Saudi highways, live weather sampled every 100&nbsp;km, a fully bilingual Arabic/English interface, and a new visual identity built around the road itself.</span>
@@ -774,10 +777,10 @@
     </div>
     <div class="footer-credit">
       <span>
-        <span data-i18n-en>Crafted by </span><span data-i18n-ar>صُنع بواسطة </span><a href="https://lsquared.sa" target="_blank" rel="noopener">L² Studio</a><span data-i18n-en>, Riyadh.</span><span data-i18n-ar>، الرياض.</span>
+        <span data-i18n-en>Crafted by </span><span data-i18n-ar>صُنع بواسطة </span><a href="https://lsquared.sa" target="_blank" rel="noopener"><span data-i18n-en>L² Studio</span><span data-i18n-ar>استوديو لام تربيع</span></a><span data-i18n-en>, Riyadh.</span><span data-i18n-ar>، الرياض.</span>
       </span>
       <span data-i18n-en>© 2026 Terhal. An L² Studio app.</span>
-      <span data-i18n-ar>© ٢٠٢٦ ترحّل. تطبيق من استوديو إل سكوير.</span>
+      <span data-i18n-ar>© ٢٠٢٦ ترحّل. تطبيق من استوديو لام تربيع.</span>
     </div>
   </div>
 </footer>
