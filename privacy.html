@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Terhal</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root {
+    --cream: #fbf5ee;
+    --cream-raised: #ffffff;
+    --card: #fff9f2;
+    --ink: #2b1d15;
+    --ink-soft: #6b5a4d;
+    --hairline: rgba(43, 29, 21, 0.12);
+    --sand: #eaa85d;
+    --terracotta: #bd5833;
+    --terracotta-deep: #8c3f22;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --cream: #1c1310; --cream-raised: #241a15; --card: #271c17;
+      --ink: #f5e9dd; --ink-soft: #cbb7a6; --hairline: rgba(245,233,221,0.14);
+      --sand: #e3a361; --terracotta: #e2794f; --terracotta-deep: #f0a074;
+    }
+  }
+  :root[data-theme="dark"] {
+    --cream: #1c1310; --cream-raised: #241a15; --card: #271c17;
+    --ink: #f5e9dd; --ink-soft: #cbb7a6; --hairline: rgba(245,233,221,0.14);
+    --sand: #e3a361; --terracotta: #e2794f; --terracotta-deep: #f0a074;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--cream); color: var(--ink);
+    font-family: 'Work Sans', system-ui, sans-serif; line-height: 1.7;
+  }
+  html[dir="rtl"] body { font-family: 'Work Sans', 'SF Arabic', 'Noto Sans Arabic', system-ui, sans-serif; }
+  a { color: var(--terracotta-deep); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 0; border-bottom: 1px solid var(--hairline);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  .brand img { width: 30px; height: 30px; border-radius: 8px; }
+  .brand span { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 1.1rem; }
+  html[dir="rtl"] .brand span { font-family: 'Work Sans', system-ui, sans-serif; font-weight: 700; }
+  .lang-toggle {
+    border: 1px solid var(--hairline); background: var(--cream-raised); color: var(--ink);
+    font: inherit; font-size: 0.82rem; font-weight: 600; padding: 7px 14px;
+    border-radius: 99px; cursor: pointer;
+  }
+  h1 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 2.3rem; margin: 44px 0 6px; text-wrap: balance; }
+  html[dir="rtl"] h1 { font-family: 'Work Sans', system-ui, sans-serif; font-weight: 700; }
+  .updated { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 40px; }
+  h2 {
+    font-family: 'Work Sans', system-ui, sans-serif; font-weight: 700; font-size: 1.2rem;
+    margin: 42px 0 12px; color: var(--terracotta-deep);
+  }
+  p, li { color: var(--ink); font-size: 1rem; }
+  ul { padding-inline-start: 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--card); border: 1px solid var(--hairline); border-radius: 16px;
+    padding: 20px 22px; margin: 28px 0;
+  }
+  footer {
+    margin-top: 64px; padding: 28px 0 48px; border-top: 1px solid var(--hairline);
+    color: var(--ink-soft); font-size: 0.85rem;
+  }
+  footer a { color: var(--ink-soft); }
+  [data-i18n-ar] { display: none !important; }
+  html[dir="rtl"] [data-i18n-en] { display: none !important; }
+  html[dir="rtl"] [data-i18n-ar] { display: initial !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Terhal logo" />
+      <span data-i18n-en>Terhal</span><span data-i18n-ar>ترحّل</span>
+    </a>
+    <button class="lang-toggle" id="langToggle" type="button">
+      <span data-i18n-en>العربية</span><span data-i18n-ar>English</span>
+    </button>
+  </header>
+
+  <div data-i18n-en>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: August 16, 2026</p>
+
+    <p>Terhal is built to respect your privacy. This page explains exactly what data the app does — and does not — handle. There is no account, no tracking, and no server of ours in between.</p>
+
+    <h2>What Terhal does not do</h2>
+    <ul>
+      <li>No account creation or sign-in of any kind</li>
+      <li>No personal data is collected, stored, or sold by us</li>
+      <li>No analytics, advertising, or tracking SDKs</li>
+      <li>No access to your photos, contacts, or files</li>
+      <li>No access to your device's current location — you choose your own origin and destination from a list of Saudi cities</li>
+    </ul>
+
+    <h2>What Terhal sends over the network</h2>
+    <p>To calculate a route and show weather, your device talks directly to a small set of independent, third-party services — with no account or personal identifier attached:</p>
+    <div class="card">
+      <ul>
+        <li><strong>OSRM</strong> (a free, open routing service) — receives the coordinates of the cities you pick, to calculate a driving route.</li>
+        <li><strong>Open-Meteo</strong> (a free weather service) — receives coordinates of points along that route, to fetch a forecast.</li>
+        <li><strong>Apple's Maps service</strong> — receives coordinates along the route, to resolve place names for display.</li>
+      </ul>
+    </div>
+    <p>Terhal has no backend server of its own. Every request goes directly from your device to these services, and none of them receive your name, account, or any other identifying information from Terhal.</p>
+
+    <h2>What's stored on your device</h2>
+    <p>Only your language preference (Arabic or English) is saved locally on your device, so the app remembers your choice next time you open it. Nothing else is stored.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Terhal does not knowingly collect any information from anyone, including children, because it does not collect personal information at all.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the update will appear on this page with a new "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy can be sent to <a href="mailto:contact@lsquared.sa">contact@lsquared.sa</a>.</p>
+  </div>
+
+  <div data-i18n-ar dir="rtl">
+    <h1>سياسة الخصوصية</h1>
+    <p class="updated">آخر تحديث: ١٦ أغسطس ٢٠٢٦</p>
+
+    <p>ترحّل مبني على احترام خصوصيتك. توضح هذه الصفحة بالضبط البيانات التي يتعامل معها التطبيق — والتي لا يتعامل معها. لا يوجد حساب، ولا تتبع، ولا خادم خاص بنا في المنتصف.</p>
+
+    <h2>ما لا يفعله ترحّل</h2>
+    <ul>
+      <li>لا إنشاء حساب أو تسجيل دخول من أي نوع</li>
+      <li>لا نجمع أو نخزّن أو نبيع أي بيانات شخصية</li>
+      <li>لا أدوات تحليلات أو إعلانات أو تتبع</li>
+      <li>لا وصول إلى صورك أو جهات اتصالك أو ملفاتك</li>
+      <li>لا وصول إلى موقعك الحالي — أنت من يختار نقطة البداية والوجهة من قائمة مدن سعودية</li>
+    </ul>
+
+    <h2>ما يرسله ترحّل عبر الشبكة</h2>
+    <p>لحساب المسار وعرض الطقس، يتواصل جهازك مباشرة مع مجموعة صغيرة من الخدمات المستقلة، بدون أي حساب أو معرّف شخصي مرفق:</p>
+    <div class="card">
+      <ul>
+        <li><strong>OSRM</strong> (خدمة توجيه مجانية ومفتوحة) — تستقبل إحداثيات المدن اللي تختارها لحساب مسار القيادة.</li>
+        <li><strong>Open-Meteo</strong> (خدمة طقس مجانية) — تستقبل إحداثيات نقاط على طول المسار لجلب توقعات الطقس.</li>
+        <li><strong>خدمة خرائط آبل</strong> — تستقبل إحداثيات على طول المسار لتحديد أسماء الأماكن للعرض.</li>
+      </ul>
+    </div>
+    <p>ترحّل ما عنده أي خادم خاص فيه. كل طلب يروح مباشرة من جهازك لهذي الخدمات، ولا وحدة منها تستقبل اسمك أو حسابك أو أي معلومة تعرّف عليك من ترحّل.</p>
+
+    <h2>ما يُحفظ على جهازك</h2>
+    <p>يُحفظ محليًا على جهازك فقط تفضيل اللغة (عربي أو إنجليزي)، حتى يتذكر التطبيق اختيارك في المرة الجاية. ما فيه أي شي ثاني يُحفظ.</p>
+
+    <h2>خصوصية الأطفال</h2>
+    <p>ترحّل لا يجمع أي معلومات من أي شخص، بما فيهم الأطفال، لأنه أساسًا لا يجمع معلومات شخصية إطلاقًا.</p>
+
+    <h2>التغييرات على هذه السياسة</h2>
+    <p>إذا تغيّرت هذه السياسة، بيظهر التحديث في هذه الصفحة مع تاريخ "آخر تحديث" جديد.</p>
+
+    <h2>التواصل</h2>
+    <p>لأي استفسار حول هذه السياسة، تواصل معنا على <a href="mailto:contact@lsquared.sa">contact@lsquared.sa</a>.</p>
+  </div>
+
+  <footer>
+    <span data-i18n-en>Terhal is an app by <a href="https://lsquared.sa" target="_blank" rel="noopener">L² Studio</a>, Riyadh. See also our <a href="terms.html">Terms of Use</a>.</span>
+    <span data-i18n-ar>ترحّل تطبيق من <a href="https://lsquared.sa" target="_blank" rel="noopener">استوديو لام تربيع</a>، الرياض. راجع أيضًا <a href="terms.html">شروط الاستخدام</a>.</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('langToggle');
+    function setLang(lang) {
+      var html = document.documentElement;
+      if (lang === 'ar') { html.setAttribute('lang', 'ar'); html.setAttribute('dir', 'rtl'); }
+      else { html.setAttribute('lang', 'en'); html.setAttribute('dir', 'ltr'); }
+      try { localStorage.setItem('terhal-site-lang', lang); } catch (e) {}
+    }
+    toggle.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('dir') === 'rtl' ? 'ar' : 'en';
+      setLang(current === 'ar' ? 'en' : 'ar');
+    });
+    var saved = null;
+    try { saved = localStorage.getItem('terhal-site-lang'); } catch (e) {}
+    setLang(saved === 'ar' ? 'ar' : 'en');
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use — Terhal</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root {
+    --cream: #fbf5ee;
+    --cream-raised: #ffffff;
+    --card: #fff9f2;
+    --ink: #2b1d15;
+    --ink-soft: #6b5a4d;
+    --hairline: rgba(43, 29, 21, 0.12);
+    --sand: #eaa85d;
+    --terracotta: #bd5833;
+    --terracotta-deep: #8c3f22;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --cream: #1c1310; --cream-raised: #241a15; --card: #271c17;
+      --ink: #f5e9dd; --ink-soft: #cbb7a6; --hairline: rgba(245,233,221,0.14);
+      --sand: #e3a361; --terracotta: #e2794f; --terracotta-deep: #f0a074;
+    }
+  }
+  :root[data-theme="dark"] {
+    --cream: #1c1310; --cream-raised: #241a15; --card: #271c17;
+    --ink: #f5e9dd; --ink-soft: #cbb7a6; --hairline: rgba(245,233,221,0.14);
+    --sand: #e3a361; --terracotta: #e2794f; --terracotta-deep: #f0a074;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--cream); color: var(--ink);
+    font-family: 'Work Sans', system-ui, sans-serif; line-height: 1.7;
+  }
+  html[dir="rtl"] body { font-family: 'Work Sans', 'SF Arabic', 'Noto Sans Arabic', system-ui, sans-serif; }
+  a { color: var(--terracotta-deep); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 0; border-bottom: 1px solid var(--hairline);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  .brand img { width: 30px; height: 30px; border-radius: 8px; }
+  .brand span { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 1.1rem; }
+  html[dir="rtl"] .brand span { font-family: 'Work Sans', system-ui, sans-serif; font-weight: 700; }
+  .lang-toggle {
+    border: 1px solid var(--hairline); background: var(--cream-raised); color: var(--ink);
+    font: inherit; font-size: 0.82rem; font-weight: 600; padding: 7px 14px;
+    border-radius: 99px; cursor: pointer;
+  }
+  h1 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 2.3rem; margin: 44px 0 6px; text-wrap: balance; }
+  html[dir="rtl"] h1 { font-family: 'Work Sans', system-ui, sans-serif; font-weight: 700; }
+  .updated { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 40px; }
+  h2 {
+    font-family: 'Work Sans', system-ui, sans-serif; font-weight: 700; font-size: 1.2rem;
+    margin: 42px 0 12px; color: var(--terracotta-deep);
+  }
+  p, li { color: var(--ink); font-size: 1rem; }
+  ul { padding-inline-start: 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--card); border: 1px solid var(--hairline); border-radius: 16px;
+    padding: 20px 22px; margin: 28px 0;
+  }
+  footer {
+    margin-top: 64px; padding: 28px 0 48px; border-top: 1px solid var(--hairline);
+    color: var(--ink-soft); font-size: 0.85rem;
+  }
+  footer a { color: var(--ink-soft); }
+  [data-i18n-ar] { display: none !important; }
+  html[dir="rtl"] [data-i18n-en] { display: none !important; }
+  html[dir="rtl"] [data-i18n-ar] { display: initial !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Terhal logo" />
+      <span data-i18n-en>Terhal</span><span data-i18n-ar>ترحّل</span>
+    </a>
+    <button class="lang-toggle" id="langToggle" type="button">
+      <span data-i18n-en>العربية</span><span data-i18n-ar>English</span>
+    </button>
+  </header>
+
+  <div data-i18n-en>
+    <h1>Terms of Use</h1>
+    <p class="updated">Last updated: August 16, 2026</p>
+
+    <p>By downloading or using Terhal, you agree to these terms. Please read them before you rely on the app for a trip.</p>
+
+    <h2>What Terhal is</h2>
+    <p>Terhal shows an estimated driving route and a checkpoint-by-checkpoint weather forecast between two cities in Saudi Arabia. It is a planning aid to help you get a feel for a drive — it is not an official traffic, road-safety, or meteorological service.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">No warranty</h2>
+      <p>Routes, travel times, and weather forecasts come from independent third-party services (OSRM, Open-Meteo, and Apple's Maps service) and may be incomplete, delayed, or inaccurate. Terhal is provided "as is," without warranties of any kind, express or implied. Always check official sources — such as the Saudi National Center of Meteorology or the Ministry of Transport — before making travel decisions, especially in severe weather or on unfamiliar roads.</p>
+    </div>
+
+    <h2>Your responsibility</h2>
+    <p>You are solely responsible for the decisions you make using information from this app, including your choice of route, departure time, and whether conditions are safe to drive in. Terhal and its creators are not liable for any loss, delay, or harm arising from your use of the app.</p>
+
+    <h2>Acceptable use</h2>
+    <p>Don't use Terhal in a way that violates applicable law, or attempt to disrupt, reverse-engineer, or abuse the app or the third-party services it depends on.</p>
+
+    <h2>No account, no purchases</h2>
+    <p>Terhal does not require an account and does not currently offer in-app purchases or subscriptions. If that changes, this page will be updated accordingly.</p>
+
+    <h2>Changes to these terms</h2>
+    <p>These terms may be updated from time to time. Continuing to use Terhal after a change means you accept the updated terms.</p>
+
+    <h2>Contact</h2>
+    <p>Questions can be sent to <a href="mailto:contact@lsquared.sa">contact@lsquared.sa</a>.</p>
+  </div>
+
+  <div data-i18n-ar dir="rtl">
+    <h1>شروط الاستخدام</h1>
+    <p class="updated">آخر تحديث: ١٦ أغسطس ٢٠٢٦</p>
+
+    <p>باستخدامك أو تحميلك لتطبيق ترحّل، فإنك توافق على هذه الشروط. الرجاء قراءتها قبل الاعتماد على التطبيق في رحلتك.</p>
+
+    <h2>وش هو ترحّل</h2>
+    <p>ترحّل يعرض مسار قيادة تقديري وتوقعات طقس محطة بمحطة بين مدينتين في السعودية. هو أداة تخطيط تساعدك تكوّن فكرة عن الطريق — مو خدمة رسمية للمرور أو السلامة أو الأرصاد الجوية.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">بدون ضمان</h2>
+      <p>المسارات وأوقات الرحلة وتوقعات الطقس تجي من خدمات مستقلة تابعة لجهات خارجية (OSRM وOpen-Meteo وخدمة خرائط آبل)، وقد تكون ناقصة أو متأخرة أو غير دقيقة. ترحّل يُقدَّم "كما هو"، بدون أي ضمانات صريحة أو ضمنية. تأكد دائمًا من المصادر الرسمية — مثل المركز الوطني للأرصاد أو وزارة النقل — قبل اتخاذ قرارات السفر، خصوصًا في الأجواء الصعبة أو على طرق غير مألوفة.</p>
+    </div>
+
+    <h2>مسؤوليتك</h2>
+    <p>أنت المسؤول الوحيد عن القرارات اللي تتخذها بناءً على معلومات هذا التطبيق، بما فيها اختيار المسار ووقت المغادرة ومدى أمان الظروف للقيادة. ترحّل وفريقه غير مسؤولين عن أي خسارة أو تأخير أو ضرر ينتج عن استخدامك للتطبيق.</p>
+
+    <h2>الاستخدام المقبول</h2>
+    <p>لا تستخدم ترحّل بأي طريقة تخالف الأنظمة المعمول بها، أو تحاول تعطيل أو هندسة عكسية أو إساءة استخدام التطبيق أو الخدمات الخارجية اللي يعتمد عليها.</p>
+
+    <h2>بدون حساب، بدون مشتريات</h2>
+    <p>ترحّل لا يتطلب حساب ولا يوفر حاليًا مشتريات داخل التطبيق أو اشتراكات. إذا تغيّر ذلك، بيتم تحديث هذه الصفحة.</p>
+
+    <h2>التغييرات على هذه الشروط</h2>
+    <p>قد تُحدَّث هذه الشروط من وقت لآخر. استمرارك باستخدام ترحّل بعد أي تغيير يعني موافقتك على الشروط المحدّثة.</p>
+
+    <h2>التواصل</h2>
+    <p>لأي استفسار، تواصل معنا على <a href="mailto:contact@lsquared.sa">contact@lsquared.sa</a>.</p>
+  </div>
+
+  <footer>
+    <span data-i18n-en>Terhal is an app by <a href="https://lsquared.sa" target="_blank" rel="noopener">L² Studio</a>, Riyadh. See also our <a href="privacy.html">Privacy Policy</a>.</span>
+    <span data-i18n-ar>ترحّل تطبيق من <a href="https://lsquared.sa" target="_blank" rel="noopener">استوديو لام تربيع</a>، الرياض. راجع أيضًا <a href="privacy.html">سياسة الخصوصية</a>.</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('langToggle');
+    function setLang(lang) {
+      var html = document.documentElement;
+      if (lang === 'ar') { html.setAttribute('lang', 'ar'); html.setAttribute('dir', 'rtl'); }
+      else { html.setAttribute('lang', 'en'); html.setAttribute('dir', 'ltr'); }
+      try { localStorage.setItem('terhal-site-lang', lang); } catch (e) {}
+    }
+    toggle.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('dir') === 'rtl' ? 'ar' : 'en';
+      setLang(current === 'ar' ? 'en' : 'ar');
+    });
+    var saved = null;
+    try { saved = localStorage.getItem('terhal-site-lang'); } catch (e) {}
+    setLang(saved === 'ar' ? 'ar' : 'en');
+  })();
+</script>
+</body>
+</html>
